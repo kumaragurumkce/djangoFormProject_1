@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="{% static 'crudapp/css/style.css' %}">
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'crudapp/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <title>Shop</title>
+  </head>
+  <body>
+    {% include 'htmlfiles/header.html' %}
+    <h1>Hello, world!</h1>
+{% block content %}{% endblock content %}
+{% include 'htmlfiles/footer.html' %}
+<script src="{% static 'crudapp/js/jquery.min.js' %}"></script>
+<!-- Popper.js -->
+<script src="{% static 'crudapp/js/popper.min.js' %}"></script>
+<!-- Bootstrap JS -->
+<script src="{% static 'crudapp/js/bootstrap.min.js' %}"></script>
+  </body>
+</html>
